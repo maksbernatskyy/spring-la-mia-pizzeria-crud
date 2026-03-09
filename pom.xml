@@ -71,6 +71,12 @@
 			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
+
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>5.3.8</version>
+		</dependency>
 	</dependencies>
 	<dependencyManagement>
 		<dependencies>
