@@ -42,6 +42,7 @@
                 <td th:text="*{descrizione}" />
                 <td th:text="*{fotoUrl}" />
                 <td th:text="|*{prezzo}€|" />
+                <td><a th:href="@{/pizze/{id}(id=*{id})}" class="btn btn-primary">Dettagli</a></td>
               </tr>
             </tbody>
           </table>
