@@ -65,7 +65,7 @@ public class PizzaController {
     }
 
     @PostMapping("/edit/{id}")
-    public String update(@Valid @ModelAttribute("pizza") Pizza pizza, BindingResult bindingResult, Model model) {
+    public String update(@Valid @ModelAttribute("pizza") Pizza pizza, @PathVariable("id") Integer id, BindingResult bindingResult, Model model) {
         if (bindingResult.hasErrors()) {
             return "/pizze/edit";
         }
